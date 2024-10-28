@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres
+    container_name: sales_task_manager_db
+    environment:
+      POSTGRES_USER: admin         
+      POSTGRES_PASSWORD: password  
+      POSTGRES_DB: sales_db        
+    ports:
+      - "5432:5432" 
+
